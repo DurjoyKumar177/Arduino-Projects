@@ -1,0 +1,61 @@
+==============================
+DHT11 Temperature & Humidity Monitor with LCD
+==============================
+
+📦 Required Components:
+-----------------------
+1. Arduino UNO (or any compatible board)
+2. DHT11 Temperature & Humidity Sensor
+3. 16x2 LCD Display
+4. I2C Adapter Module for LCD
+5. Jumper Wires (Male-to-Female)
+6. Breadboard (optional)
+7. USB Cable (for Arduino)
+
+📋 Libraries Required:
+-----------------------
+Install these libraries in Arduino IDE:
+- Adafruit Unified Sensor
+- DHT Sensor Library by Adafruit
+- LiquidCrystal_I2C by Frank de Brabander
+
+To install: Arduino IDE > Tools > Manage Libraries > Search and Install
+
+🔌 Wiring Instructions:
+------------------------
+
+👉 DHT11 Sensor Wiring:
+- VCC    → 5V on Arduino
+- GND    → GND on Arduino
+- DATA   → D4 on Arduino
+
+👉 LCD with I2C Adapter Wiring:
+- GND    → GND on Arduino
+- VCC    → 5V on Arduino
+- SDA    → A4 (on Arduino UNO)
+- SCL    → A5 (on Arduino UNO)
+
+🖥 How to Upload & Run:
+-----------------------
+1. Open Arduino IDE.
+2. Connect Arduino UNO to PC via USB.
+3. Copy and paste the full code into the IDE.
+4. Select:
+   - Board: Arduino UNO
+   - Port: (select the correct COM port)
+5. Click ✔️ (Verify), then ⬆️ (Upload).
+6. Open Serial Monitor at 9600 baud rate.
+7. The LCD will display:
+   - Temperature
+   - Humidity
+   - Rain forecast (based on humidity)
+   - Temperature comment (e.g., Stay Warm, Stay Hydrated)
+
+✅ Notes:
+---------
+- If you see "Sensor Error!", recheck your DHT11 wiring.
+- The degree symbol is displayed using `lcd.write(223);`.
+- Uses `delay()` for stable reading intervals.
+
+📅 Author: [Your Name]
+🔧 Project Type: Weather Monitoring (Basic)
