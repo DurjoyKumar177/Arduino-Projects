@@ -43,7 +43,7 @@ To install: Arduino IDE > Tools > Manage Libraries > Search and Install
 4. Select:
    - Board: Arduino UNO
    - Port: (select the correct COM port)
-5. Click ✔️ (Verify), then ⬆️ (Upload).
+5. Click✔️ (Verify), then ⬆️ (Upload).
 6. Open Serial Monitor at 9600 baud rate.
 7. The LCD will display:
    - Temperature
@@ -57,5 +57,5 @@ To install: Arduino IDE > Tools > Manage Libraries > Search and Install
 - The degree symbol is displayed using `lcd.write(223);`.
 - Uses `delay()` for stable reading intervals.
 
-📅 Author: [Your Name]
+📅 Author: Durjoy Kumar
 🔧 Project Type: Weather Monitoring (Basic)
