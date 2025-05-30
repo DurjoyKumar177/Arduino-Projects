@@ -15,7 +15,7 @@ void loop() {
   digitalWrite(greenPin, HIGH);
   digitalWrite(yellowPin, LOW);
   digitalWrite(redPin, LOW);
-  delay(5000);  // 5 seconds
+  delay(10000);  // 5 seconds
 
   // Yellow Light ON (Prepare to stop)
   digitalWrite(greenPin, LOW);
@@ -28,4 +28,11 @@ void loop() {
   digitalWrite(yellowPin, LOW);
   digitalWrite(redPin, HIGH);
   delay(5000);  // 5 seconds
+
+   // Yellow Light ON (Prepare to stop)
+  digitalWrite(greenPin, LOW);
+  digitalWrite(yellowPin, HIGH);
+  digitalWrite(redPin, LOW);
+  delay(2000);  // 2 seconds
+  
 }
