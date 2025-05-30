@@ -18,9 +18,11 @@ void setup() {
   lcd.init();           // Initialize the LCD
   lcd.backlight();      // Turn on backlight
   lcd.setCursor(2, 0);
-  lcd.print("Welcome..!");
+  lcd.print("WELLCOME..!");
   delay(2000);
   lcd.clear();
+  lcd.print("TEMP & HUMIDITY ");
+
 }
 
 void loop() {
